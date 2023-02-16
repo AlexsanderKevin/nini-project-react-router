@@ -1,6 +1,6 @@
 import React from 'react'
 import ProductCard from '../components/ProductCard'
-// import styles from './css/Home.module.css'
+import '../css/Home.css'
 
 const Home = () => {
   const [ products, setProducts ] = React.useState()
@@ -15,7 +15,7 @@ const Home = () => {
   }, [])
 
   return (
-    <section>
+    <section className='productsSection'>
       { products ? products.map( product => (
         <ProductCard key={ product.id } product={ product } />
       )) :
