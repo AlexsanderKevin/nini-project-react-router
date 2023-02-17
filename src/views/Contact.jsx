@@ -1,10 +1,11 @@
 import React from 'react'
+import '../css/Contact.css'
 
 const Contact = () => {
   return (
-    <section>
-      <div>*foto de contato*</div>
-      <div>
+    <section className='contact-section'>
+      <div className='contact-pic'>*foto de contato*</div>
+      <div className='contact-info-container'>
         <h1>Entre em contato</h1>
         <p>kevin13348@gmail.com</p>
         <p>99999-9999</p>
