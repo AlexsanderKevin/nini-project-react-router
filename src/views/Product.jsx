@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
+import '../css/Product.css'
 
 const Product = () => {
   const [ produto, setProduto ] = React.useState()
@@ -16,15 +17,18 @@ const Product = () => {
   return (
     <>
     { produto ? (
-      <section>
-        <div>
+      <section className='product-section'>
+        <div className='product-pic-container'>
           { produto.fotos.map( picture => (
-            <img key={ picture.src } src={ picture.src } alt={ picture.titulo } />
+            <img className='product-pic' key={ picture.src } src={ picture.src } alt={ picture.titulo } />
           ))}
         </div>
-        <div>
+        <div className='product-info-container'>
           <h1>{ produto.nome }</h1>
-          <label>R${ produto.preco }</label>
+          <label 
+            className={`product-price-label ${ produto.vendido === 'true' && 'sold'}`}
+          >
+            R$ { produto.preco }</label>
           <p>{ produto.descricao }</p>
         </div>
       </section>

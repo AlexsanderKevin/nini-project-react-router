@@ -1,0 +1,36 @@
+.product-section {
+  display: flex;
+}
+
+.product-pic-container {
+  width: 400px;
+  margin-right: 3em;
+}
+
+.product-pic {
+  width: 400px;
+  border-radius: 10px;
+  margin-bottom: 3em;
+}
+
+.product-info-container h1 {
+  font-size: 30px;
+}
+
+.product-info-container p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+}
+
+.product-price-label {
+  background-color: rgb(77, 255, 54);
+  border-radius: 5px;
+  padding: 13px 20px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sold {
+  background-color: red;
+}
