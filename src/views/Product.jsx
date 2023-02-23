@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import '../css/Product.css'
+import '../css/Animation.css'
 
 const Product = () => {
   const [ produto, setProduto ] = React.useState()
@@ -17,7 +18,7 @@ const Product = () => {
   return (
     <>
     { produto ? (
-      <section className='product-section'>
+      <section className='product-section animeleft'>
         <div className='product-pic-container'>
           { produto.fotos.map( picture => (
             <img className='product-pic' key={ picture.src } src={ picture.src } alt={ picture.titulo } />
