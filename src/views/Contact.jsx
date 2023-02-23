@@ -1,10 +1,14 @@
 import React from 'react'
 import '../css/Contact.css'
 import '../css/Animation.css'
+import Head from '../components/Head'
 
 const Contact = () => {
   return (
     <section className='contact-section animeleft'>
+      <Head 
+        title='Contato'
+      />
       <div className='contact-pic'>*foto de contato*</div>
       <div className='contact-info-container'>
         <h1>Entre em contato</h1>
