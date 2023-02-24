@@ -1,12 +1,27 @@
 .animeleft {
   opacity: 0;
   transform: translateX(-20px);
-  animation: animeleft .3s forwards;
+  animation: slideIn .3s forwards;
 }
 
-@keyframes animeleft {
+@keyframes slideIn {
   to {
     opacity: 1;
     transform: initial;
+  }
+}
+
+.loading {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 10px solid #ccc;
+  border-right-color: transparent;
+  animation: rotation 1s infinite;
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
   }
 }

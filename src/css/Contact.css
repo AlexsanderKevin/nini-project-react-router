@@ -26,9 +26,10 @@
 }
 
 .contact-info-container p::before {
-  content: '__ ';
-  width: 10px;
+  content: ' ';
+  display: inline-block;
+  width: 20px;
   height: 3px;
-  color: #ccc;
-  font-weight: bold;
+  background-color: #ccc;
+  margin-right: 10px;
 }

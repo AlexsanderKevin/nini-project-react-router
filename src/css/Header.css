@@ -14,8 +14,10 @@
   font-size: 20px;
 }
 
-.headerNav a.active {
-  background-color: #aaa;
+.headerNav a.active,
+.headerNav a:hover
+{
+  background-color: #bbb;
 }
 
 .headerNav a:first-child {
